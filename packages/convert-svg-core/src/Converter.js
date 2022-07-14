@@ -54,7 +54,6 @@ const _sanitize = Symbol('sanitize');
 const _setDimensions = Symbol('setDimensions');
 const _tempFile = Symbol('tempFile');
 const _validate = Symbol('validate');
-const { getChrome } = require('./get-chrome')
 
 /**
  * Converts SVG to another format using a headless Chromium instance.
