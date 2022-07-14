@@ -54,6 +54,7 @@ const _sanitize = Symbol('sanitize');
 const _setDimensions = Symbol('setDimensions');
 const _tempFile = Symbol('tempFile');
 const _validate = Symbol('validate');
+const { getChrome } = require('./get-chrome')
 
 /**
  * Converts SVG to another format using a headless Chromium instance.
@@ -363,7 +364,11 @@ html { background-color: ${provider.getBackgroundColor(options)}; }
 
   async [_getPage](html) {
     if (!this[_browser]) {
-      this[_browser] = await puppeteer.launch(this[_options].puppeteer);
+      // this[_browser] = await puppeteer.launch(this[_options].puppeteer);
+      const chrome = await getChrome();
+      this[_browser] = await puppeteer.connect({
+        browserWSEndpoint: chrome.endpoint
+      });
       this[_page] = await this[_browser].newPage();
     }
 
