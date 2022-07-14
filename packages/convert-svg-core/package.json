@@ -46,7 +46,7 @@
     "lodash.pick": "^4.4.0",
     "pollock": "^0.2.0",
     "puppeteer": "^13.7.0",
-    "superagent": "^8.0.0",
+    "superagent": "^7.1.5",
     "tmp": "^0.2.1"
   },
   "devDependencies": {
