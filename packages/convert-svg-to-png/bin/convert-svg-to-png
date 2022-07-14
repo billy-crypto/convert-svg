@@ -24,7 +24,7 @@
 
 'use strict';
 
-const { CLI } = require('convert-svg-core');
+const { CLI } = require('../../convert-svg-core');
 
 const PNGProvider = require('../src/PNGProvider');
 
