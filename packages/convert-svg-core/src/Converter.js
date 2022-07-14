@@ -132,7 +132,9 @@ class Converter {
       // XML
       'xml:lang',
       'xmlns',
-      'xmlns:xlink'
+      'xmlns:xlink',
+      'image-rendering',
+      'src',
     ]);
     this[_allowedDeprecatedAttributeNames] = new Set([
       // Core
