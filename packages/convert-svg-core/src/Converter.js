@@ -28,7 +28,7 @@ const cheerio = require('cheerio');
 const fileUrl = require('file-url');
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('puppeteer');
+const chromium = require('chrome-aws-lambda');
 const tmp = require('tmp');
 const util = require('util');
 
@@ -365,10 +365,7 @@ html { background-color: ${provider.getBackgroundColor(options)}; }
   async [_getPage](html) {
     if (!this[_browser]) {
       // this[_browser] = await puppeteer.launch(this[_options].puppeteer);
-      const chrome = await getChrome();
-      this[_browser] = await puppeteer.connect({
-        browserWSEndpoint: chrome.endpoint
-      });
+      this[_browser] = await chromium.puppeteer.launch(this[_options].puppeteer);
       this[_page] = await this[_browser].newPage();
     }
 
