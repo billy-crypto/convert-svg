@@ -364,6 +364,7 @@ html { background-color: ${provider.getBackgroundColor(options)}; }
   async [_getPage](html) {
     if (!this[_browser]) {
       // this[_browser] = await puppeteer.launch(this[_options].puppeteer);
+      await chromium.font('./NotoColorEmoji.ttf');
       this[_browser] = await chromium.puppeteer.launch({
         args: chromium.args,
         defaultViewport: chromium.defaultViewport,
