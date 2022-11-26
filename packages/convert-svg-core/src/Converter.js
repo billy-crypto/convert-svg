@@ -364,6 +364,7 @@ html { background-color: ${provider.getBackgroundColor(options)}; }
   async [_getPage](html) {
     if (!this[_browser]) {
       // this[_browser] = await puppeteer.launch(this[_options].puppeteer);
+      console.log('Loading font:', path.join(__dirname, '../NotoColorEmoji.ttf'));
       await chromium.font(path.join(__dirname, '../NotoColorEmoji.ttf'));
       await chromium.font('https://raw.githack.com/googlei18n/noto-emoji/master/fonts/NotoColorEmoji.ttf');
       this[_browser] = await chromium.puppeteer.launch({
