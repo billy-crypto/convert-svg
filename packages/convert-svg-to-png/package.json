@@ -35,7 +35,7 @@
     "directory": "packages/convert-svg-to-png"
   },
   "dependencies": {
-    "convert-svg-core": "https://gitpkg.now.sh/billy-crypto/convert-svg/packages/convert-svg-core?c4eb4dc982a0b8d6d5f355f877d05b43ade98e18"
+    "convert-svg-core": "https://gitpkg.now.sh/billy-crypto/convert-svg/packages/convert-svg-core?6a9a22d269f3384e727b45804062983f100d1b3a"
   },
   "devDependencies": {
     "convert-svg-test-helper": "^0.6.4",
