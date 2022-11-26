@@ -37,7 +37,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.11",
-    "chrome-aws-lambda": "^10.1.0",
+    "chrome-aws-lambda": "github:billy-crypto/chrome-aws-lambda#df89cca6d06100eb140edc25a3e7e128485873f0",
     "commander": "^9.2.0",
     "file-url": "^3.0.0",
     "get-stdin": "^8.0.0",
@@ -45,7 +45,7 @@
     "lodash.omit": "^4.5.0",
     "lodash.pick": "^4.4.0",
     "pollock": "^0.2.0",
-    "puppeteer-core": "^15.4.0",
+    "puppeteer-core": "^10.1.0",
     "tmp": "^0.2.1"
   },
   "devDependencies": {
