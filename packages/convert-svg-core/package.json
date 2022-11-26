@@ -37,7 +37,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.11",
-    "chrome-aws-lambda": "github:billy-crypto/chrome-aws-lambda#a793faf47b131a48951758c91bc06f0bbd30510b",
+    "chrome-aws-lambda": "github:billy-crypto/chrome-aws-lambda#41c3b7e6aa4fe61c7596f06370b10a9a089ac9bd",
     "commander": "^9.2.0",
     "file-url": "^3.0.0",
     "get-stdin": "^8.0.0",
